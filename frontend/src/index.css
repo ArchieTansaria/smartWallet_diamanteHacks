@@ -1,4 +1,397 @@
-* {
-	margin: 0;
-	background: #1a1a1a;
+/* Import Poppins Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #1a1a1a;
 }
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 ;
+}
+
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 120px 100px 0 100px;
+    background-color: #1a1a1a;
+}
+
+.hero-content {
+    width: 1440px;
+    height: 944px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    color: #fff;
+    margin-bottom: 20px;
+    line-height: normal;
+    font-family: 'poppins';
+    font-weight: 600px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #C0C0C0;
+    
+}
+
+.hero .btn-primary {
+    background-color: #007BFF;
+    color: #fff;
+    border-radius: 56px;
+    width: auto;
+    height: 60px;
+    font-size: 40px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    flex-shrink: 0;
+    padding: 15px 30px 60px 30px;
+    margin-left: 100px;
+}
+
+.hero .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.hero-image {
+    width: 1200px;
+    height: 1200px;
+    flex-shrink: 0;
+    padding-right: 100px;
+    margin-top: -20px;
+    
+}
+
+.hero-content-1 > h1{
+    padding-left: 100px;
+    font-size: 99px;
+
+}
+
+.hero-content-2 > p{
+    padding-left: 100px;
+    font-size: 41px;
+    font-weight: 300;
+}
+
+.hero-image img {
+    width: 100%;
+}
+
+/* Points Section */
+.points-section {
+    padding: 30px;
+    padding-top: 60px;
+    background-color: #3F3F3F;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 24px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.points-container {
+    border-radius: 24px;
+    display: flex;
+    margin-top: -50px;
+    padding: 24px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-shrink: 0;
+   
+}
+/*first tab*/
+.points-card-airline-miles{
+    text-align: center;
+    background-color: #3F3F3F;
+    padding: 30px;
+    gap: 10px;
+    border-radius: 10px;
+    width: 280px;
+    height: 280px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-align: left;
+    padding: 20px 0px 0px 20px;
+    margin-left: 40px;
+}
+
+.points-card-airline-miles img{
+    width: 100px;
+    height: 100px;
+}
+
+.points-card-airline-miles > h3{
+    font-size: 45px;
+    margin-bottom: 10px;
+    font-family: 'poppins',sans-serif;
+    margin-top: 10px;
+    color: white;
+}
+
+.points-card-airline-miles > p{
+    color: #AFAFAF;
+    font-family: Poppins;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    margin-top: 1px;
+}
+
+.points-card-airline-miles > span{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    margin-top: -8px;
+}
+
+
+/*second tab*/
+.points-card-hotel-points{
+    text-align: center;
+    background-color: #575D62;
+    padding: 30px;
+    width: 450px;
+    height: 300px;
+    gap: 10px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 32px;
+    box-shadow: 0px 64px 64px -48px rgba(15, 15, 15, 0.10);
+
+}
+
+.points-card-hotel-points img{
+    width: 90px;
+    height: 90px;
+    margin-left: 32px;
+}
+
+.points-card-hotel-points > h3{
+    font-size: 45px;
+    margin-bottom: 10px;
+    font-family: 'poppins',sans-serif;
+    margin-top: 10px;
+    color: white;
+    margin-left: 32px;
+}
+
+.points-card-hotel-points > p{
+    color: #AFAFAF;
+    font-family: Poppins;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    margin-top: 1px;
+    margin-left: 32px;
+}
+
+.points-card-hotel-points > span{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    margin-top: -8px;
+    margin-left: 32px;
+}
+
+/*third tab*/
+.points-card-car-rental-rewards{
+    text-align: center;
+    background-color: #3F3F3F;
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+    height: 280px;
+    gap: 10px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-align: left;
+    padding: 20px 64px 0px 20px;
+    margin-right: 125px;
+
+}
+
+.points-card-car-rental-rewards img{
+    width: 95px;
+    height: 95px;
+}
+
+.points-card-car-rental-rewards > h3{
+    font-size: 45px;
+    margin-bottom: 10px;
+    font-family: 'poppins',sans-serif;
+    margin-top: 10px;
+    color: white;
+    white-space: nowrap;
+}
+
+.points-card-car-rental-rewards > p{
+    color: #AFAFAF;
+    font-family: Poppins;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    margin-top: 1px;
+}
+
+.points-card-car-rental-rewards > span{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    margin-top: -8px;
+}
+
+/*SLIDE-2*/
+
+.container {
+    display: flex;
+    padding: 196px 160px; /* Adjust padding for better centering */
+    flex-direction: column;
+    justify-content: center; /* Aligns items vertically in the center */
+    align-items: center; /* Aligns items horizontally in the center */
+    gap: 50px; /* Adjusted for better spacing */
+    max-width: max-content;
+    margin: 0 auto; /* Centers container horizontally on the page */
+}
+
+.header h1 {
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 89px; 
+    letter-spacing: -0.96px;
+    text-align: center;
+}
+
+.header p {
+    color: #C0C0C0;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 39px;
+    font-weight: 400;
+    line-height: 1.4;
+    margin-top: -8px;
+}
+
+.features {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Ensures the cards are centered */
+    gap: 180px; /* More consistent spacing between feature cards */
+    flex-wrap: wrap; /* Ensures wrapping on smaller screens */
+    max-width: 100%; /* Makes sure it stays within the viewport width */
+    
+}
+
+
+.feature-card {
+    background-color: #3F3F3F;
+    border-radius: 18px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    text-align: center;
+    flex-shrink: 0; /* Prevents shrinking of the card on smaller screens */
+    height: 700px;
+    padding: 5px 32px 84px 32px;/* Adjust padding for better spacing inside */
+}
+
+.feature-card img {
+    width: 300px;
+    height: 300px;
+
+}
+
+.feature-card h3 {
+    font-size: 43px;
+    margin-bottom: 15px;
+    color: #FFF;
+    margin-top: -3px;
+}
+
+.feature-card p {
+    font-family: 'Poppins';
+    padding: 0 30px 0 30px;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 34px; 
+    letter-spacing: -0.1px;
+    color: #AFAFAF;
+    text-align: justify;
+    line-height: 40px;
+}
+
+.btn {
+    padding: 10px 35px;
+    background-color: #575D62;
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+    font-size: 33px;
+    color: #FFF;
+    letter-spacing: 0.9px;
+    font-style: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: rgb(129, 129, 129);
+}
+
+.cta {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center; /* Center the call-to-action button */
+}
+
+.cta-button {
+    padding: 15px 30px;
+    background-color: #007BFF;
+    color: white;
+    width: auto;
+    height: auto;
+    border: none;
+    border-radius: 50px;
+    font-size: 38px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
