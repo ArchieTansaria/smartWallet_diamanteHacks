@@ -180,7 +180,14 @@ body {
     text-align: left;
     margin-left: 32px;
     box-shadow: 0px 64px 64px -48px rgba(15, 15, 15, 0.10);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 
+}
+
+.points-card-hotel-points:hover{
+    transform: translateY(-10px); /* Moves the tab upwards by 10px */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Adds a shadow for a lifted effect */
 }
 
 .points-card-hotel-points img{
@@ -326,6 +333,13 @@ body {
     flex-shrink: 0; /* Prevents shrinking of the card on smaller screens */
     height: 700px;
     padding: 5px 32px 84px 32px;/* Adjust padding for better spacing inside */
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover{
+    transform: translateY(-15px); /* Moves the tab upwards by 10px */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Adds a shadow for a lifted effect */
 }
 
 .feature-card img {
@@ -483,3 +497,6 @@ body {
         margin-bottom: 20px;
     }
 }
+
+
+  
